@@ -9,7 +9,7 @@ while(REQUESTED_MODULES_LIST)
     list(REMOVE_DUPLICATES REQUESTED_MODULES_LIST)
     # remove any modules from the requested list which are already in the loaded list
     list(REMOVE_ITEM REQUESTED_MODULES_LIST ${LOADED_MODULES_LIST})
-    # store the requested_modules_list back to global
+    # store the requested_modules_lit back to global
     set( REQUESTED_MODULES_LIST ${REQUESTED_MODULES_LIST} ${MODULE_NAME} CACHE INTERNAL "requested modules_list" )  
     
     # message(STATUS "requested modules 1: ${REQUESTED_MODULES_LIST}")
